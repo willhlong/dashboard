@@ -1,11 +1,13 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: 'Roboto', 'sans-serif';
 }
 
 .container {
   display: grid;
-  grid-template-columns: 1fr 4fr;
+  grid-template-columns: 1fr 6fr;
+  height: 100vh;
 }
 
 .header {
@@ -15,9 +17,43 @@
 }
 
 .left-sidebar {
-  background-color: #3B82F6;
+  background-color: #60A5FA;
+  color: white;
+  font-weight: bolder;
+  font-size: 14px;
   grid-area: 1 / 1 / span 2 / 2;
 }
+
+.logo {
+  font-size: 20px;
+}
+
+.logo > div,
+.sidebar-menu > *,
+.sidebar-options > * {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  grid-auto-rows: 1fr;
+  padding: 5px;
+  align-items: center;
+  justify-items: left;
+}
+
+svg {
+  fill: white;
+  width: 25px;
+}
+
+.logo svg {
+  width: 60px;
+}
+
+.logo,
+.sidebar-menu,
+.sidebar-options {
+  padding: 25px 10px;
+}
+
 
 .content {
   background-color: #EFF6FF;
