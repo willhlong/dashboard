@@ -16,12 +16,34 @@
   grid-column: 2 / 3;
 }
 
+.search {
+  display: flex;
+}
+
+/* FIXME: fix border around input box */
+.search input,
+.search input:focus {
+  border: 2px solid lightgray;
+  border-radius: 25px;
+  background-color: lightgray;
+}
+
+.search svg {
+  width: 25px;
+}
+
+/* Styles for sidebar */
 .left-sidebar {
   background-color: #60A5FA;
   color: white;
   font-weight: bolder;
   font-size: 14px;
   grid-area: 1 / 1 / span 2 / 2;
+}
+
+.left-sidebar svg {
+  fill: white;
+  width: 25px;
 }
 
 .logo {
@@ -39,10 +61,7 @@
   justify-items: left;
 }
 
-svg {
-  fill: white;
-  width: 25px;
-}
+
 
 .logo svg {
   width: 60px;
