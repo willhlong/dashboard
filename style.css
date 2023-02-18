@@ -14,29 +14,43 @@
   box-shadow: 0px 5px 5px black;
   grid-row: 1 / 2;
   grid-column: 2 / 3;
+  display: grid;
 }
 
-.search {
+.header-search {
   display: flex;
 }
 
 /* FIXME: fix border around input box */
-.search input,
-.search input:focus {
+.header-search input,
+.header-search input:focus {
   border: 2px solid lightgray;
   border-radius: 25px;
   background-color: lightgray;
 }
 
-.search svg {
+.header svg {
   width: 25px;
 }
 
+.header-notifications svg {
+  color: white;
+}
+
+.header-notifications img {
+  width: 50px;
+  border-radius: 50%;
+}
+
+.header-personal-info img {
+  width: 65px;
+  border-radius: 50%;;
+}
 /* Styles for sidebar */
 .left-sidebar {
   background-color: #60A5FA;
   color: white;
-  font-weight: bolder;
+  font-weight: bold;
   font-size: 14px;
   grid-area: 1 / 1 / span 2 / 2;
 }
