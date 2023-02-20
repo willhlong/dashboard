@@ -20,6 +20,8 @@
   grid-auto-rows: min-content;
   gap: 15px;
   padding: 25px 50px;
+  position: relative;
+  box-shadow: 0 5px 5px lightgray;
 }
 
 .header-search {
@@ -128,7 +130,6 @@
   background-color: rgb(240, 233, 243);
   grid-area: 2 / 2 / 3 / 3;
   padding: 50px;
-  box-shadow: inset 0px 5px 5px lightgray;
 }
 
 .content h1 {
@@ -137,11 +138,14 @@
 
 .content-card-container {
   display: grid;
-  grid-template-columns: repeat(4, minmax(200px, 400px));
+  grid-template-columns: repeat(auto-fill, minmax(200px, 400px));
   gap: 50px;
 }
 
 .card {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
   border-radius: 15px;
   border-left: 8px solid forestgreen;
   box-shadow: 5px 5px 5px rgb(214, 200, 200);
@@ -158,9 +162,15 @@
   display: flex;
   justify-content: flex-end;
   gap: 10px;
+  align-self: flex-end;
 }
 
 .card svg {
   width: 25px;
+}
+
+.live-feed {
+  background-color: rgb(240, 233, 243);
+  padding: 50px 25px;
 }
 
